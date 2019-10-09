@@ -1,0 +1,89 @@
+.todo-list-container {
+	width: 500px;
+	font-family: sans-serif;
+	display: inline-block;
+}
+
+.todo-list-container form input {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	background: #fff;
+	border: none;
+	padding: 20px;
+	z-index: 2;
+	margin-bottom: 10px;
+}
+
+.todo-list-container .task-container .close {
+	display: none;
+}
+
+.todo-list-container .task-container:hover .close {
+	float: right;
+	display: inline-block;
+	color: #844;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.todo-list-container .task-container:hover .close:active {
+	color: #622;
+}
+
+.task-container {
+	position: relative;
+	padding: 20px;
+	padding-left: 60px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	background-color: #fafafa;
+	border: 1px solid #f4f4f4;
+	color: #444;
+	font-size: 20px;
+	text-align: left;
+}
+
+.task-check {
+	position: absolute;
+	left: 20px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #e8e8e8;
+	background: #f4f4f4;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.task-check span {
+	display: inline-block;
+	position: relative;
+	top: -13px;
+	left: 2px;
+	user-select: none;
+	color: #a66;
+	font-size: 34px;
+}
+
+.done .task-text {
+	color: #bbb;
+	text-decoration: line-through;
+}
+
+.todo-filter {
+	padding: 20px;
+}
+
+.todo-filter a {
+	display: inline-block;
+	text-decoration: none;
+	color: #888;
+	margin-right: 10px;
+}

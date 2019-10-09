@@ -1,2 +1,2 @@
-# erudx-exampes
+# erudx-examples
 Examples for erudx

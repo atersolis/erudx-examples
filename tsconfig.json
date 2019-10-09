@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"jsxFactory": "React.createElement",
+		"target": "es5",
+		"lib": ["es7", "dom"],
+		"esModuleInterop": true,
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"baseUrl": ".",
+		"paths": {
+			"react": ["node_modules/preact/compat"],
+			"react-dom": ["node_modules/preact/compat"]
+		}
+	}
+}

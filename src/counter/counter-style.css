@@ -1,0 +1,30 @@
+.counter-container {
+	display: inline-block;
+	background-color: #EEE;
+	padding: 0px;
+	text-align: center;
+	color: #444;
+	font-size: 50px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.counter-container h1 {
+	margin: 20px;
+	margin-bottom: 0px;
+}
+
+.counter-actions button {
+	background: #DDD;
+	padding: 10px;
+	width: 150px;
+	font-size: 20px;
+	border: none;
+}
+
+.counter-actions button:active {
+	background: #CCC;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
