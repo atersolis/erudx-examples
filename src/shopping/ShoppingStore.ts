@@ -1,4 +1,4 @@
-import { store, action, afterClone, mount, composedAction } from "erudx";
+import { store, action, afterClone, mount, compoundAction } from "erudx";
 
 interface Product {
 	id: string;
@@ -83,7 +83,7 @@ class ShoppingStore {
 		this.cart = mount(new ProductCollectionStore(products, 0), this, "cart");
 	}
 
-	@composedAction
+	@compoundAction
 	buy(productId: string, quantity: number) {
 		let stockProduct = this.stock[productId];
 		let cartProduct = this.cart[productId];
@@ -94,7 +94,7 @@ class ShoppingStore {
 		}
 	}
 
-	@composedAction
+	@compoundAction
 	checkout() {
 		for (let productId in this.cart) {
 			this.cart[productId].setQuantity(0);
