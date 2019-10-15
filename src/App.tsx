@@ -1,6 +1,7 @@
 import * as React from "react";
 import CounterApp from "./counter/Counter";
 import TodoListApp from "./todo/TodoList";
+import ShopApp from "./shopping/Shopping";
 import "./app";
 
 const App = () => {
@@ -15,6 +16,9 @@ const App = () => {
 			<div class="separator"></div>
 			<h2>Todo List example</h2>
 			<TodoListApp />
+			<div class="separator"></div>
+			<h2>Shop example</h2>
+			<ShopApp />
 		</div>
 	);
 };

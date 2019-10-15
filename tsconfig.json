@@ -3,7 +3,7 @@
 		"jsx": "react",
 		"jsxFactory": "React.createElement",
 		"target": "es5",
-		"lib": ["es7", "dom"],
+		"lib": ["es2017", "dom"],
 		"esModuleInterop": true,
 		"downlevelIteration": true,
 		"experimentalDecorators": true,
